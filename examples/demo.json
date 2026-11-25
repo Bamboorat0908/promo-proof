@@ -1,0 +1,53 @@
+{
+  "case": "演示｜促销文案发布前审核",
+  "currency": "CNY",
+  "context": "假设活动期内、已领券，每单一次，无其他优惠。演示商品价格为虚构。",
+  "claim": {
+    "quote": "全店满199元减50元",
+    "source": "合成演示｜待审海报",
+    "scope": "全店商品",
+    "threshold": 19900,
+    "discount": 5000,
+    "basis": "本例商品展示价",
+    "pending": []
+  },
+  "rule": {
+    "quote": "仅正价商品计入门槛，满199元减50元。",
+    "source": "合成演示｜商家设定",
+    "scope": "仅正价商品",
+    "threshold": 19900,
+    "discount": 5000,
+    "basis": "本例商品展示价",
+    "pending": []
+  },
+  "catalog": [
+    {
+      "id": "A-正价上衣",
+      "limit": 1,
+      "claim": "yes",
+      "rule": "yes",
+      "claim_price": 15900,
+      "rule_price": 15900
+    },
+    {
+      "id": "B-特价配件",
+      "limit": 1,
+      "claim": "yes",
+      "rule": "no",
+      "claim_price": 4000,
+      "rule_price": 4000
+    },
+    {
+      "id": "C-正价配件",
+      "limit": 1,
+      "claim": "yes",
+      "rule": "yes",
+      "claim_price": 4000,
+      "rule_price": 4000
+    }
+  ],
+  "basket": {
+    "A-正价上衣": 1,
+    "B-特价配件": 1
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "case": "有赞｜原价商品与活动商品混单",
+  "currency": "CNY",
+  "context": "复现官方帮助示例。假设用户持券，B 同时参加满10减2，列示的10元为原价，B 不计入本券。只核本券。",
+  "claim": {
+    "quote": "仅原价可用，满10元减5元",
+    "source": "https://help.youzan.com/displaylist/detail_44_44-2-80576",
+    "scope": "原价且未享折扣的商品",
+    "threshold": 1000,
+    "discount": 500,
+    "basis": "未参加折扣的商品原价",
+    "pending": []
+  },
+  "rule": {
+    "quote": "仅原价可用，满10元减5元",
+    "source": "https://help.youzan.com/displaylist/detail_44_44-2-80576",
+    "scope": "原价且未享折扣的商品",
+    "threshold": 1000,
+    "discount": 500,
+    "basis": "未参加折扣的商品原价",
+    "pending": []
+  },
+  "catalog": [
+    {
+      "id": "A-无折扣",
+      "limit": 1,
+      "claim": "yes",
+      "rule": "yes",
+      "claim_price": 1000,
+      "rule_price": 1000
+    },
+    {
+      "id": "B-参加活动",
+      "limit": 1,
+      "claim": "no",
+      "rule": "no",
+      "claim_price": 1000,
+      "rule_price": 1000
+    }
+  ],
+  "basket": {
+    "A-无折扣": 1,
+    "B-参加活动": 1
+  }
+}

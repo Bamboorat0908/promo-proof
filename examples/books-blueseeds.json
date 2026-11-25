@@ -1,0 +1,44 @@
+{
+  "case": "博客来｜Blueseeds 指定商品",
+  "currency": "TWD",
+  "context": "券期 2026-11-01 至 2026-11-30。按 2026-11-25 页面采样，假设在有效期内已领券、商品有货、普通单次付款且无其他折扣。",
+  "claim": {
+    "quote": "Blueseeds 指定商品滿$1111現折$111",
+    "source": "https://activity.books.com.tw/coupondraw/coupon/",
+    "scope": "Blueseeds 指定商品",
+    "threshold": 111100,
+    "discount": 11100,
+    "basis": "活动页列示的优惠价或特价",
+    "pending": []
+  },
+  "rule": {
+    "quote": "購買指定活動商品總金額需符合滿額條件方可折抵",
+    "source": "https://www.books.com.tw/web/sys_qalist/qa_1_93 ｜ 本券面额与门槛见 https://activity.books.com.tw/coupondraw/coupon/",
+    "scope": "Blueseeds 指定商品",
+    "threshold": 111100,
+    "discount": 11100,
+    "basis": "假设结账前商品金额等于采样价且无其他折扣",
+    "pending": []
+  },
+  "catalog": [
+    {
+      "id": "晨曦玫瑰精露",
+      "limit": 1,
+      "claim": "yes",
+      "rule": "yes",
+      "claim_price": 86500,
+      "rule_price": 86500
+    },
+    {
+      "id": "女王特调身体乳",
+      "limit": 1,
+      "claim": "yes",
+      "rule": "yes",
+      "claim_price": 128000,
+      "rule_price": 128000
+    }
+  ],
+  "basket": {
+    "晨曦玫瑰精露": 1
+  }
+}

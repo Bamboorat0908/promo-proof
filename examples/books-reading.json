@@ -1,0 +1,45 @@
+{
+  "case": "博客来｜亲子天下参展纸本书",
+  "currency": "TWD",
+  "context": "券期 2026-10-27 至 2026-12-14。按 2026-11-25 页面采样，假设在有效期内已领券、商品有货、普通单次付款且无其他折扣。",
+  "claim": {
+    "quote": "親子天下$50折價券｜參展紙本書結帳滿$899即可抵用",
+    "source": "https://activity.books.com.tw/coupondraw/coupon/",
+    "scope": "亲子天下参展纸本书",
+    "threshold": 89900,
+    "discount": 5000,
+    "basis": "活动页列示的优惠价或特价",
+    "pending": []
+  },
+  "rule": {
+    "quote": "購買指定活動商品總金額需符合滿額條件方可折抵",
+    "source": "https://www.books.com.tw/web/sys_qalist/qa_1_93 ｜ 本券面额与门槛见 https://activity.books.com.tw/coupondraw/coupon/",
+    "scope": "亲子天下参展纸本书",
+    "threshold": 89900,
+    "discount": 5000,
+    "basis": "假设结账前商品金额等于采样价且无其他折扣",
+    "pending": []
+  },
+  "catalog": [
+    {
+      "id": "吉凶街道套书",
+      "limit": 1,
+      "claim": "yes",
+      "rule": "yes",
+      "claim_price": 54000,
+      "rule_price": 54000
+    },
+    {
+      "id": "漫画世界史套书",
+      "limit": 1,
+      "claim": "yes",
+      "rule": "yes",
+      "claim_price": 79900,
+      "rule_price": 79900
+    }
+  ],
+  "basket": {
+    "吉凶街道套书": 1,
+    "漫画世界史套书": 1
+  }
+}
